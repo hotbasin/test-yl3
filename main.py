@@ -28,29 +28,29 @@ def figure_class(class_):
     if class_ == 'Quadro':
         new_form_ = ht_.FORM_QUADRO
     if class_ == 'Cone':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_CONE
     if class_ == 'Circle':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_CIRCLE
     if class_ == 'Cube':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_CUBE
     if class_ == 'Parallelepiped':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_PARALLELEPIPED
     if class_ == 'Pyramid3F':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_PYRAMID3F
     if class_ == 'Pyramid4F':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_PYRAMID4F
     if class_ == 'Rectangle':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_RECTANGLE
     if class_ == 'Rhombus':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_RHOMBUS
     if class_ == 'Sphere':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_SPHERE
     if class_ == 'Trapezoid':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_TRAPEZOID
     if class_ == 'Triangle':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_TRIANGLE
     if class_ == 'Cylinder':
-        new_form_ = ht_.FORM_QUADRO
+        new_form_ = ht_.FORM_CYLINDER
     return ht_.HEADER + new_form_ + ht_.FOOTER
 
 @route('/result', method='POST')
