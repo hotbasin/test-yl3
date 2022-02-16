@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+#!/usr/bin/python3
+
+HEADER = '''<!DOCTYPE html>
 <HTML LANG="ru">
 <HEAD>
     <TITLE>B6.13 Домашнее задание</TITLE>
@@ -7,14 +9,15 @@
 <BODY>
     <H1>Расчёт параметров геометрических фигур</H1>
     <P>На данный момент подразумеваются не произвольные типы фигур, а симметричные. То есть равнобедренные треугольники, правильные пирамиды, конусы и некоторые другие</P>
-    <HR>
     <P></P>
-    <FORM ID="iniform" STYLE="background: #ddddff; padding: 10px" ACTION="/figure" METHOD="post">
+    <HR>
+'''
+
+FORM_INI = '''    <FORM ID="iniform" STYLE="background: #ddddff; padding: 10px" ACTION="/figure" METHOD="post">
         <P>
             <LABEL>Выбор фигуры:&nbsp;&nbsp;
             <SELECT FORM="iniform" NAME="figtype" SIZE="1">
-                <OPTION VALUE="---" SELECTED>-----Other-----</OPTION>
-                <OPTION VALUE="Quadro">Квадрат</OPTION>
+                <OPTION VALUE="Quadro" SELECTED>Квадрат</OPTION>
                 <OPTION VALUE="Cone">Конус</OPTION>
                 <OPTION VALUE="Circle">Круг</OPTION>
                 <OPTION VALUE="Cube">Куб</OPTION>
@@ -34,8 +37,24 @@
             <INPUT TYPE="submit" VALUE="Далее">
         </P>
     </FORM>
-    <HR>
+'''
+
+FORM_QUADRO = '''    <FORM ID="form_quadro" STYLE="background: #ddddff; padding: 10px" ACTION="/result" METHOD="post">
+        <P>
+            <LABEL>Сторона квадрата:&nbsp;&nbsp;
+                <INPUT NAME="a_" FORM="form_quadro" TYPE="number" SIZE="50" REQUIRED PLACEHOLDER="Введите значение длины стороны квадрата">
+            </LABEL>
+        </P>
+        <P>
+            <INPUT TYPE="submit" VALUE="Вычислить">
+        </P>
+    </FORM>
+'''
+
+FOOTER = '''    <HR>
     <H2><A HREF="/">Начальная страница</A></H2>
     <P></P>
 </BODY>
-</HTML>
+</HTML>'''
+
+#####=====----- THE END -----=====########################################
